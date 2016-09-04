@@ -12,3 +12,4 @@ var screenHeight:CGFloat = 0.0
 var screenWidth:CGFloat = 0.0
 var scale:CGFloat = 1.0
 
+let fontName = "Bazaronite" // cool digital looking font
