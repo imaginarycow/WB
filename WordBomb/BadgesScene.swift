@@ -12,12 +12,22 @@ import SpriteKit
 class BadgesScene: SKScene {
     
     let exitButton = SKLabelNode(text: "Exit")
+    let goldBadge = SKSpriteNode(imageNamed: "badges.png")
     
     override func didMoveToView(view: SKView) {
         
         self.backgroundColor = .blackColor()
         createTitleBanner()
         createExitButton()
+        createBadges()
+    }
+    
+    func createBadges() {
+        
+        goldBadge.zPosition = 1
+        goldBadge.position = CGPoint(x: self.size.width/2, y: self.size.height/2)
+        goldBadge.size = CGSize(width: 300.0, height: 100.0)
+        addChild(goldBadge)
     }
     
     func createTitleBanner() {

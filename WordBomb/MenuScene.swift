@@ -20,6 +20,7 @@ class MenuScene: SKScene {
     
     override func didMoveToView(view: SKView) {
         
+        checkForNewInstall()
         createBackground()
         createButtons()
         createLettersByIndex()

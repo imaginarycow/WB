@@ -28,6 +28,9 @@
 		B52791A31D7CA39000FA01C8 /* BadgesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52791A21D7CA39000FA01C8 /* BadgesScene.swift */; };
 		B52791A71D7CE23800FA01C8 /* unlockButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791A61D7CE23800FA01C8 /* unlockButton.png */; };
 		B52791A91D7DD82700FA01C8 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52791A81D7DD82700FA01C8 /* Sounds.swift */; };
+		B52791AB1D7DE2E600FA01C8 /* arrows.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791AA1D7DE2E600FA01C8 /* arrows.png */; };
+		B52791AD1D7DE3E900FA01C8 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52791AC1D7DE3E900FA01C8 /* HelperFunctions.swift */; };
+		B52791AF1D7E03BE00FA01C8 /* badges.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791AE1D7E03BE00FA01C8 /* badges.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		B52791A21D7CA39000FA01C8 /* BadgesScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgesScene.swift; sourceTree = "<group>"; };
 		B52791A61D7CE23800FA01C8 /* unlockButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlockButton.png; sourceTree = "<group>"; };
 		B52791A81D7DD82700FA01C8 /* Sounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
+		B52791AA1D7DE2E600FA01C8 /* arrows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrows.png; sourceTree = "<group>"; };
+		B52791AC1D7DE3E900FA01C8 /* HelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+		B52791AE1D7E03BE00FA01C8 /* badges.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = badges.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,7 @@
 			children = (
 				B52791861D7BDC5C00FA01C8 /* GameData.swift */,
 				B52791A81D7DD82700FA01C8 /* Sounds.swift */,
+				B52791AC1D7DE3E900FA01C8 /* HelperFunctions.swift */,
 				B52791671D7BD94A00FA01C8 /* AppDelegate.swift */,
 				B52791771D7BD94B00FA01C8 /* Info.plist */,
 				B52791741D7BD94B00FA01C8 /* LaunchScreen.storyboard */,
@@ -132,6 +139,7 @@
 		B52791881D7BEAF400FA01C8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B52791AA1D7DE2E600FA01C8 /* arrows.png */,
 				B52791A61D7CE23800FA01C8 /* unlockButton.png */,
 				B52791991D7C861900FA01C8 /* letterBox.png */,
 				B527919B1D7C88E000FA01C8 /* display.png */,
@@ -140,6 +148,7 @@
 				B52791971D7C03A600FA01C8 /* timerFrame.png */,
 				B527918D1D7BED8800FA01C8 /* settingsIcon.png */,
 				B52791931D7BFF7700FA01C8 /* bombImg.png */,
+				B52791AE1D7E03BE00FA01C8 /* badges.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -220,8 +229,10 @@
 				B527919E1D7C898000FA01C8 /* smallDisplay.png in Resources */,
 				B52791A71D7CE23800FA01C8 /* unlockButton.png in Resources */,
 				B52791A11D7C9E7600FA01C8 /* Bazaronite.ttf in Resources */,
+				B52791AF1D7E03BE00FA01C8 /* badges.png in Resources */,
 				B52791731D7BD94A00FA01C8 /* Assets.xcassets in Resources */,
 				B52791711D7BD94A00FA01C8 /* Main.storyboard in Resources */,
+				B52791AB1D7DE2E600FA01C8 /* arrows.png in Resources */,
 				B527919C1D7C88E000FA01C8 /* display.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +249,7 @@
 				B527916C1D7BD94A00FA01C8 /* GameScene.swift in Sources */,
 				B52791811D7BDA3B00FA01C8 /* MenuScene.swift in Sources */,
 				B527916E1D7BD94A00FA01C8 /* GameViewController.swift in Sources */,
+				B52791AD1D7DE3E900FA01C8 /* HelperFunctions.swift in Sources */,
 				B52791871D7BDC5C00FA01C8 /* GameData.swift in Sources */,
 				B52791A91D7DD82700FA01C8 /* Sounds.swift in Sources */,
 				B52791831D7BDA5400FA01C8 /* DifficultyScene.swift in Sources */,
