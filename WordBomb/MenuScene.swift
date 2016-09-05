@@ -13,8 +13,8 @@ let vc = GameViewController()
 class MenuScene: SKScene {
     
     let display = SKSpriteNode(imageNamed: "display.png")
-    let settingsButton = SKLabelNode(text: "Settings")
-    let helpButton = SKLabelNode(text: "Help")
+    let diffButton = SKLabelNode(text: "Difficulty")
+    let badgesButton = SKLabelNode(text: "Badges")
     let playButton = SKLabelNode(text: "Play")
     var animationIndex = 0
     
@@ -27,9 +27,7 @@ class MenuScene: SKScene {
     
     func createLettersByIndex() {
         
-        let fadeIn = SKAction.fadeAlphaTo(1.0, duration: 1.0)
-        let fadeOut = SKAction.fadeAlphaTo(0.0, duration: 1.0)
-        
+        //change letters every 2 seconds from Wordbomb to Disarmed
         runAction(SKAction.repeatActionForever(SKAction.sequence([
             SKAction.runBlock( {
                 self.removeLetters()
@@ -149,12 +147,12 @@ class MenuScene: SKScene {
         let fontSize = 28.0 * scale
         let color = SKColor.redColor()
         
-        settingsButton.zPosition = buttonZ
-        settingsButton.fontSize = fontSize
-        settingsButton.fontColor = color
-        settingsButton.fontName = fontName
-        settingsButton.position = CGPoint(x: ((scene?.size.width)! * 0.3), y: scene!.size.height * 0.1)
-        addChild(settingsButton)
+        diffButton.zPosition = buttonZ
+        diffButton.fontSize = fontSize
+        diffButton.fontColor = color
+        diffButton.fontName = fontName
+        diffButton.position = CGPoint(x: ((scene?.size.width)! * 0.3), y: scene!.size.height * 0.1)
+        addChild(diffButton)
         
         playButton.zPosition = buttonZ
         playButton.fontSize = fontSize
@@ -163,12 +161,12 @@ class MenuScene: SKScene {
         playButton.position = CGPoint(x: ((scene?.size.width)! * 0.5), y: scene!.size.height * 0.1)
         addChild(playButton)
         
-        helpButton.zPosition = buttonZ
-        helpButton.fontSize = fontSize
-        helpButton.fontName = fontName
-        helpButton.fontColor = color
-        helpButton.position = CGPoint(x: ((scene?.size.width)! * 0.7), y: scene!.size.height * 0.1)
-        addChild(helpButton)
+        badgesButton.zPosition = buttonZ
+        badgesButton.fontSize = fontSize
+        badgesButton.fontName = fontName
+        badgesButton.fontColor = color
+        badgesButton.position = CGPoint(x: ((scene?.size.width)! * 0.7), y: scene!.size.height * 0.1)
+        addChild(badgesButton)
 
     }
     
@@ -203,13 +201,13 @@ class MenuScene: SKScene {
         addChild(timer)
     }
     
-    func moveToSettingsScene() {
+    func moveToDifficultyScene() {
         
-        let settingsScene = SettingsScene()
-        settingsScene.size = self.size
-        settingsScene.scaleMode = self.scaleMode
+        let diffScene = DifficultyScene()
+        diffScene.size = self.size
+        diffScene.scaleMode = self.scaleMode
         let transition = SKTransition.fadeWithDuration(1.0)
-        self.scene!.view?.presentScene(settingsScene, transition: transition)
+        self.scene!.view?.presentScene(diffScene, transition: transition)
     }
     
     func moveToCategorySelectScene() {
@@ -222,13 +220,13 @@ class MenuScene: SKScene {
         
     }
     
-    func moveToHelpScene() {
+    func moveToBadgesScene() {
         
-        let helpScene = HelpScene()
-        helpScene.size = self.size
-        helpScene.scaleMode = self.scaleMode
+        let badgesScene = BadgesScene()
+        badgesScene.size = self.size
+        badgesScene.scaleMode = self.scaleMode
         let transition = SKTransition.fadeWithDuration(1.0)
-        self.scene!.view?.presentScene(helpScene, transition: transition)
+        self.scene!.view?.presentScene(badgesScene, transition: transition)
     }
 
     
@@ -236,17 +234,17 @@ class MenuScene: SKScene {
         if let touch = touches.first as UITouch! {
             let location = touch.locationInNode(self)
             
-            if settingsButton.containsPoint(location) {
-                //go to settings scene
-                moveToSettingsScene()
+            if diffButton.containsPoint(location) {
+                //go to set difficulty scene
+                moveToDifficultyScene()
             }
             if playButton.containsPoint(location) {
                 //go to category select scene
                 moveToCategorySelectScene()
             }
-            if helpButton.containsPoint(location) {
+            if badgesButton.containsPoint(location) {
                 //go to help scene
-                moveToHelpScene()
+                moveToBadgesScene()
             }
         }
     }

@@ -1,14 +1,15 @@
 //
-//  SettingsScene.swift
+//  HelpScene.swift
 //  WordBomb
 //
-//  Created by ramiro beltran on 9/3/16.
+//  Created by ramiro beltran on 9/4/16.
 //  Copyright © 2016 Ramiro Beltran. All rights reserved.
 //
 
 import SpriteKit
 
-class SettingsScene: SKScene {
+
+class BadgesScene: SKScene {
     
     let exitButton = SKLabelNode(text: "Exit")
     
@@ -27,7 +28,7 @@ class SettingsScene: SKScene {
         titleBanner.position = CGPoint(x: self.size.width/2, y: self.size.height * 0.9)
         addChild(titleBanner)
         
-        let titleText = SKLabelNode(text: "Settings")
+        let titleText = SKLabelNode(text: "Badges")
         titleText.fontColor = .redColor()
         titleText.fontSize = 30.0 * scale
         titleText.fontName = fontName
@@ -54,7 +55,7 @@ class SettingsScene: SKScene {
         let transition = SKTransition.fadeWithDuration(1.0)
         self.scene!.view?.presentScene(menuScene, transition: transition)
     }
-
+    
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         if let touch = touches.first as UITouch! {
             let location = touch.locationInNode(self)

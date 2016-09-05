@@ -1,5 +1,5 @@
 //
-//  CategoryScene.swift
+//  SettingsScene.swift
 //  WordBomb
 //
 //  Created by ramiro beltran on 9/3/16.
@@ -8,29 +8,26 @@
 
 import SpriteKit
 
-
-class CategoryScene: SKScene {
+class DifficultyScene: SKScene {
     
     let exitButton = SKLabelNode(text: "Exit")
-    let unlockButton = SKSpriteNode(imageNamed: "unlockButton.png")
     
     override func didMoveToView(view: SKView) {
         
         self.backgroundColor = .blackColor()
         createTitleBanner()
         createExitButton()
-        createUnlockButton()
     }
     
     func createTitleBanner() {
         
         let titleBanner = SKSpriteNode(imageNamed: "timerFrame.png")
-        titleBanner.size = CGSize(width: (scene?.size.width)! * 0.6, height: (scene?.size.height)! * 0.2)
+        titleBanner.size = CGSize(width: (scene?.size.width)! * 0.5, height: (scene?.size.height)! * 0.2)
         titleBanner.zPosition = 1
         titleBanner.position = CGPoint(x: self.size.width/2, y: self.size.height * 0.9)
         addChild(titleBanner)
         
-        let titleText = SKLabelNode(text: "Select Categories")
+        let titleText = SKLabelNode(text: "Difficulty")
         titleText.fontColor = .redColor()
         titleText.fontSize = 30.0 * scale
         titleText.fontName = fontName
@@ -49,14 +46,6 @@ class CategoryScene: SKScene {
         addChild(exitButton)
     }
     
-    func createUnlockButton() {
-        
-        unlockButton.zPosition = 3
-        unlockButton.size = CGSize(width: 150.0, height: 40.0)
-        unlockButton.position = CGPoint(x: self.size.width/2, y: (self.size.height * 0.01) + unlockButton.size.height/2)
-        addChild(unlockButton)
-    }
-    
     func moveToMenuScene() {
         
         let menuScene = MenuScene()
@@ -65,7 +54,7 @@ class CategoryScene: SKScene {
         let transition = SKTransition.fadeWithDuration(1.0)
         self.scene!.view?.presentScene(menuScene, transition: transition)
     }
-    
+
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         if let touch = touches.first as UITouch! {
             let location = touch.locationInNode(self)
