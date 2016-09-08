@@ -26,11 +26,28 @@
 		B527919E1D7C898000FA01C8 /* smallDisplay.png in Resources */ = {isa = PBXBuildFile; fileRef = B527919D1D7C898000FA01C8 /* smallDisplay.png */; };
 		B52791A11D7C9E7600FA01C8 /* Bazaronite.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B52791A01D7C9E7600FA01C8 /* Bazaronite.ttf */; };
 		B52791A31D7CA39000FA01C8 /* BadgesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52791A21D7CA39000FA01C8 /* BadgesScene.swift */; };
-		B52791A71D7CE23800FA01C8 /* unlockButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791A61D7CE23800FA01C8 /* unlockButton.png */; };
 		B52791A91D7DD82700FA01C8 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52791A81D7DD82700FA01C8 /* Sounds.swift */; };
 		B52791AB1D7DE2E600FA01C8 /* arrows.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791AA1D7DE2E600FA01C8 /* arrows.png */; };
 		B52791AD1D7DE3E900FA01C8 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52791AC1D7DE3E900FA01C8 /* HelperFunctions.swift */; };
 		B52791AF1D7E03BE00FA01C8 /* badges.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791AE1D7E03BE00FA01C8 /* badges.png */; };
+		B52791B11D7F4EB200FA01C8 /* animals.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791B01D7F4EB200FA01C8 /* animals.png */; };
+		B52791B51D7F531100FA01C8 /* medical.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791B41D7F531100FA01C8 /* medical.png */; };
+		B52791B71D7F534300FA01C8 /* Categories Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52791B61D7F534300FA01C8 /* Categories Class.swift */; };
+		B52791B91D80454200FA01C8 /* space.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791B81D80454200FA01C8 /* space.png */; };
+		B52791BB1D80464100FA01C8 /* sports.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791BA1D80464100FA01C8 /* sports.png */; };
+		B52791BD1D80472B00FA01C8 /* technology.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791BC1D80472B00FA01C8 /* technology.png */; };
+		B52791BF1D8048DE00FA01C8 /* olympics.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791BE1D8048DE00FA01C8 /* olympics.png */; };
+		B52791C11D804A9100FA01C8 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791C01D804A9100FA01C8 /* music.png */; };
+		B52791C31D804C8000FA01C8 /* geography.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791C21D804C8000FA01C8 /* geography.png */; };
+		B52791C51D804EC600FA01C8 /* cooking.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791C41D804EC600FA01C8 /* cooking.png */; };
+		B52791C71D804FB200FA01C8 /* heros.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791C61D804FB200FA01C8 /* heros.png */; };
+		B52791C91D80517A00FA01C8 /* unlockButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791C81D80517A00FA01C8 /* unlockButton.png */; };
+		B52791CB1D808B4E00FA01C8 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791CA1D808B4E00FA01C8 /* check.png */; };
+		B52791CD1D808D9C00FA01C8 /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791CC1D808D9C00FA01C8 /* lock.png */; };
+		B52791CF1D8093B500FA01C8 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791CE1D8093B500FA01C8 /* play.png */; };
+		B52791D11D8093BB00FA01C8 /* selectAll.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791D01D8093BB00FA01C8 /* selectAll.png */; };
+		B52791D31D8110B100FA01C8 /* midDisplay.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791D21D8110B100FA01C8 /* midDisplay.png */; };
+		B52791D51D81154200FA01C8 /* longDisplay.png in Resources */ = {isa = PBXBuildFile; fileRef = B52791D41D81154200FA01C8 /* longDisplay.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,11 +72,28 @@
 		B527919D1D7C898000FA01C8 /* smallDisplay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallDisplay.png; sourceTree = "<group>"; };
 		B52791A01D7C9E7600FA01C8 /* Bazaronite.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bazaronite.ttf; sourceTree = "<group>"; };
 		B52791A21D7CA39000FA01C8 /* BadgesScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgesScene.swift; sourceTree = "<group>"; };
-		B52791A61D7CE23800FA01C8 /* unlockButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlockButton.png; sourceTree = "<group>"; };
 		B52791A81D7DD82700FA01C8 /* Sounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
 		B52791AA1D7DE2E600FA01C8 /* arrows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrows.png; sourceTree = "<group>"; };
 		B52791AC1D7DE3E900FA01C8 /* HelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 		B52791AE1D7E03BE00FA01C8 /* badges.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = badges.png; sourceTree = "<group>"; };
+		B52791B01D7F4EB200FA01C8 /* animals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animals.png; sourceTree = "<group>"; };
+		B52791B41D7F531100FA01C8 /* medical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medical.png; sourceTree = "<group>"; };
+		B52791B61D7F534300FA01C8 /* Categories Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Categories Class.swift"; sourceTree = "<group>"; };
+		B52791B81D80454200FA01C8 /* space.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = space.png; sourceTree = "<group>"; };
+		B52791BA1D80464100FA01C8 /* sports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sports.png; sourceTree = "<group>"; };
+		B52791BC1D80472B00FA01C8 /* technology.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = technology.png; sourceTree = "<group>"; };
+		B52791BE1D8048DE00FA01C8 /* olympics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = olympics.png; sourceTree = "<group>"; };
+		B52791C01D804A9100FA01C8 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
+		B52791C21D804C8000FA01C8 /* geography.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = geography.png; sourceTree = "<group>"; };
+		B52791C41D804EC600FA01C8 /* cooking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cooking.png; sourceTree = "<group>"; };
+		B52791C61D804FB200FA01C8 /* heros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heros.png; sourceTree = "<group>"; };
+		B52791C81D80517A00FA01C8 /* unlockButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlockButton.png; sourceTree = "<group>"; };
+		B52791CA1D808B4E00FA01C8 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		B52791CC1D808D9C00FA01C8 /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
+		B52791CE1D8093B500FA01C8 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		B52791D01D8093BB00FA01C8 /* selectAll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectAll.png; sourceTree = "<group>"; };
+		B52791D21D8110B100FA01C8 /* midDisplay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = midDisplay.png; sourceTree = "<group>"; };
+		B52791D41D81154200FA01C8 /* longDisplay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = longDisplay.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +154,7 @@
 				B52791861D7BDC5C00FA01C8 /* GameData.swift */,
 				B52791A81D7DD82700FA01C8 /* Sounds.swift */,
 				B52791AC1D7DE3E900FA01C8 /* HelperFunctions.swift */,
+				B52791B61D7F534300FA01C8 /* Categories Class.swift */,
 				B52791671D7BD94A00FA01C8 /* AppDelegate.swift */,
 				B52791771D7BD94B00FA01C8 /* Info.plist */,
 				B52791741D7BD94B00FA01C8 /* LaunchScreen.storyboard */,
@@ -139,14 +174,30 @@
 		B52791881D7BEAF400FA01C8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B52791CE1D8093B500FA01C8 /* play.png */,
+				B52791D01D8093BB00FA01C8 /* selectAll.png */,
+				B52791CC1D808D9C00FA01C8 /* lock.png */,
+				B52791CA1D808B4E00FA01C8 /* check.png */,
+				B52791B01D7F4EB200FA01C8 /* animals.png */,
+				B52791C41D804EC600FA01C8 /* cooking.png */,
+				B52791C21D804C8000FA01C8 /* geography.png */,
+				B52791C61D804FB200FA01C8 /* heros.png */,
+				B52791B41D7F531100FA01C8 /* medical.png */,
+				B52791C01D804A9100FA01C8 /* music.png */,
+				B52791BE1D8048DE00FA01C8 /* olympics.png */,
+				B52791BC1D80472B00FA01C8 /* technology.png */,
+				B52791B81D80454200FA01C8 /* space.png */,
+				B52791BA1D80464100FA01C8 /* sports.png */,
 				B52791AA1D7DE2E600FA01C8 /* arrows.png */,
-				B52791A61D7CE23800FA01C8 /* unlockButton.png */,
 				B52791991D7C861900FA01C8 /* letterBox.png */,
 				B527919B1D7C88E000FA01C8 /* display.png */,
+				B52791D21D8110B100FA01C8 /* midDisplay.png */,
+				B52791D41D81154200FA01C8 /* longDisplay.png */,
 				B527919D1D7C898000FA01C8 /* smallDisplay.png */,
 				B52791911D7BFBFE00FA01C8 /* display1.png */,
 				B52791971D7C03A600FA01C8 /* timerFrame.png */,
 				B527918D1D7BED8800FA01C8 /* settingsIcon.png */,
+				B52791C81D80517A00FA01C8 /* unlockButton.png */,
 				B52791931D7BFF7700FA01C8 /* bombImg.png */,
 				B52791AE1D7E03BE00FA01C8 /* badges.png */,
 			);
@@ -222,17 +273,33 @@
 			files = (
 				B52791981D7C03A600FA01C8 /* timerFrame.png in Resources */,
 				B527919A1D7C861900FA01C8 /* letterBox.png in Resources */,
+				B52791CF1D8093B500FA01C8 /* play.png in Resources */,
 				B52791761D7BD94B00FA01C8 /* LaunchScreen.storyboard in Resources */,
 				B527918E1D7BED8800FA01C8 /* settingsIcon.png in Resources */,
+				B52791BD1D80472B00FA01C8 /* technology.png in Resources */,
 				B52791921D7BFBFE00FA01C8 /* display1.png in Resources */,
+				B52791B11D7F4EB200FA01C8 /* animals.png in Resources */,
+				B52791CB1D808B4E00FA01C8 /* check.png in Resources */,
+				B52791BB1D80464100FA01C8 /* sports.png in Resources */,
+				B52791C11D804A9100FA01C8 /* music.png in Resources */,
 				B52791941D7BFF7700FA01C8 /* bombImg.png in Resources */,
+				B52791D31D8110B100FA01C8 /* midDisplay.png in Resources */,
 				B527919E1D7C898000FA01C8 /* smallDisplay.png in Resources */,
-				B52791A71D7CE23800FA01C8 /* unlockButton.png in Resources */,
+				B52791D11D8093BB00FA01C8 /* selectAll.png in Resources */,
+				B52791C51D804EC600FA01C8 /* cooking.png in Resources */,
+				B52791D51D81154200FA01C8 /* longDisplay.png in Resources */,
+				B52791C71D804FB200FA01C8 /* heros.png in Resources */,
+				B52791CD1D808D9C00FA01C8 /* lock.png in Resources */,
+				B52791BF1D8048DE00FA01C8 /* olympics.png in Resources */,
 				B52791A11D7C9E7600FA01C8 /* Bazaronite.ttf in Resources */,
+				B52791B91D80454200FA01C8 /* space.png in Resources */,
 				B52791AF1D7E03BE00FA01C8 /* badges.png in Resources */,
 				B52791731D7BD94A00FA01C8 /* Assets.xcassets in Resources */,
 				B52791711D7BD94A00FA01C8 /* Main.storyboard in Resources */,
+				B52791C91D80517A00FA01C8 /* unlockButton.png in Resources */,
+				B52791B51D7F531100FA01C8 /* medical.png in Resources */,
 				B52791AB1D7DE2E600FA01C8 /* arrows.png in Resources */,
+				B52791C31D804C8000FA01C8 /* geography.png in Resources */,
 				B527919C1D7C88E000FA01C8 /* display.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,6 +314,7 @@
 				B52791851D7BDA7800FA01C8 /* CategoryScene.swift in Sources */,
 				B52791A31D7CA39000FA01C8 /* BadgesScene.swift in Sources */,
 				B527916C1D7BD94A00FA01C8 /* GameScene.swift in Sources */,
+				B52791B71D7F534300FA01C8 /* Categories Class.swift in Sources */,
 				B52791811D7BDA3B00FA01C8 /* MenuScene.swift in Sources */,
 				B527916E1D7BD94A00FA01C8 /* GameViewController.swift in Sources */,
 				B52791AD1D7DE3E900FA01C8 /* HelperFunctions.swift in Sources */,

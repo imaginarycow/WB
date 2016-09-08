@@ -49,15 +49,15 @@ class DifficultyScene: SKScene {
         case 3:
             lettArrow.position = CGPoint(x: self.size.width * 0.6, y: self.size.height * 0.6 + yOffset)
         case 4:
-            lettArrow.position = CGPoint(x: self.size.width * 0.6, y: self.size.height * 0.5 + yOffset)
+            lettArrow.position = CGPoint(x: self.size.width * 0.6, y: self.size.height * 0.45 + yOffset)
         case 5:
-            lettArrow.position = CGPoint(x: self.size.width * 0.6, y: self.size.height * 0.4 + yOffset)
+            lettArrow.position = CGPoint(x: self.size.width * 0.6, y: self.size.height * 0.3 + yOffset)
         case 6:
             lettArrow.position = CGPoint(x: self.size.width * 0.8, y: self.size.height * 0.6 + yOffset)
         case 7:
-            lettArrow.position = CGPoint(x: self.size.width * 0.8, y: self.size.height * 0.5 + yOffset)
+            lettArrow.position = CGPoint(x: self.size.width * 0.8, y: self.size.height * 0.45 + yOffset)
         case 8:
-            lettArrow.position = CGPoint(x: self.size.width * 0.8, y: self.size.height * 0.4 + yOffset)
+            lettArrow.position = CGPoint(x: self.size.width * 0.8, y: self.size.height * 0.3 + yOffset)
         default:
             lettArrow.position = CGPoint(x: self.size.width * 0.8, y: self.size.height * 0.6 + yOffset)
         }
@@ -90,14 +90,14 @@ class DifficultyScene: SKScene {
         four.fontSize = fSize
         four.fontColor = .redColor()
         four.zPosition = 1
-        four.position = CGPoint(x: self.size.width * 0.65, y: self.size.height * 0.5)
+        four.position = CGPoint(x: self.size.width * 0.65, y: self.size.height * 0.45)
         addChild(four)
         
         five.fontName = fontName
         five.fontSize = fSize
         five.fontColor = .redColor()
         five.zPosition = 1
-        five.position = CGPoint(x: self.size.width * 0.65, y: self.size.height * 0.4)
+        five.position = CGPoint(x: self.size.width * 0.65, y: self.size.height * 0.3)
         addChild(five)
         
         six.fontName = fontName
@@ -111,14 +111,14 @@ class DifficultyScene: SKScene {
         seven.fontSize = fSize
         seven.fontColor = .redColor()
         seven.zPosition = 1
-        seven.position = CGPoint(x: self.size.width * 0.85, y: self.size.height * 0.5)
+        seven.position = CGPoint(x: self.size.width * 0.85, y: self.size.height * 0.45)
         addChild(seven)
         
         eight.fontName = fontName
         eight.fontSize = fSize
         eight.fontColor = .redColor()
         eight.zPosition = 1
-        eight.position = CGPoint(x: self.size.width * 0.85, y: self.size.height * 0.4)
+        eight.position = CGPoint(x: self.size.width * 0.85, y: self.size.height * 0.3)
         addChild(eight)
 
     }

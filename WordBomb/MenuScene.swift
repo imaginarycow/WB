@@ -147,12 +147,21 @@ class MenuScene: SKScene {
         let buttonZ:CGFloat = 10.0
         let fontSize = 28.0 * scale
         let color = SKColor.redColor()
+        let displayWidth: CGFloat = scene!.size.width * 0.85
+        let displayHeight: CGFloat = fontSize * 1.5
+        
+        let display = SKSpriteNode(imageNamed: "longDisplay.png")
+        display.size = CGSize(width: displayWidth, height: displayHeight)
+        display.zPosition = 2
+        display.position = CGPoint(x: self.size.width/2, y: scene!.size.height * 0.12)
+        addChild(display)
+        
         
         diffButton.zPosition = buttonZ
         diffButton.fontSize = fontSize
         diffButton.fontColor = color
         diffButton.fontName = fontName
-        diffButton.position = CGPoint(x: ((scene?.size.width)! * 0.3), y: scene!.size.height * 0.1)
+        diffButton.position = CGPoint(x: ((scene?.size.width)! * 0.25), y: scene!.size.height * 0.1)
         addChild(diffButton)
         
         playButton.zPosition = buttonZ
@@ -166,7 +175,7 @@ class MenuScene: SKScene {
         badgesButton.fontSize = fontSize
         badgesButton.fontName = fontName
         badgesButton.fontColor = color
-        badgesButton.position = CGPoint(x: ((scene?.size.width)! * 0.7), y: scene!.size.height * 0.1)
+        badgesButton.position = CGPoint(x: ((scene?.size.width)! * 0.75), y: scene!.size.height * 0.1)
         addChild(badgesButton)
 
     }

@@ -10,6 +10,7 @@ import SpriteKit
 
 let gameData = NSUserDefaults.standardUserDefaults()
 var hasRun = gameData.boolForKey("hasRun")
+var fullGame = gameData.boolForKey("fullGame")
 
 var screenHeight:CGFloat = 0.0
 var screenWidth:CGFloat = 0.0
