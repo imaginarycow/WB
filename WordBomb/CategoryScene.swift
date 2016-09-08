@@ -32,6 +32,9 @@ class CategoryScene: SKScene {
     
     override func didMoveToView(view: SKView) {
         
+        chosenCategories = []
+        chosenIcons = []
+        
         self.backgroundColor = .blackColor()
         createTitleBanner()
         createExitButton()

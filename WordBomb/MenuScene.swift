@@ -196,7 +196,7 @@ class MenuScene: SKScene {
         display.zPosition = 2
         addChild(display)
         
-        let timerFrame = SKSpriteNode(imageNamed: "timerFrame.png")
+        let timerFrame = SKSpriteNode(imageNamed: "timerFrame2.png")
         timerFrame.zPosition = 2
         timerFrame.size = CGSize(width: (scene?.size.width)! * 0.5, height: (scene?.size.height)! * 0.2)
         timerFrame.position = CGPoint(x: scene!.size.width/2, y: (scene?.size.height)! * 0.9)

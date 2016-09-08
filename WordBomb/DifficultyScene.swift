@@ -37,7 +37,6 @@ class DifficultyScene: SKScene {
         setTimerArrow(startTime)
     }
     
-    
     func setLetterArrow(len: Int) {
         lettArrow.removeFromParent()
         let size = CGSize(width: 20.0 * scale, height: 20.0 * scale)
