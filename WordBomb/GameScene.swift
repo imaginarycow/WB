@@ -12,14 +12,15 @@ class GameScene: SKScene {
     
     let quitButton = SKLabelNode(text: "Quit")
     let display = SKSpriteNode(imageNamed: "display.png")
-    var greenLight = SKSpriteNode(imageNamed: "greenLight.png")
-    var yellowLight = SKSpriteNode()
-    var redLight = SKSpriteNode()
+    let greenLight = SKSpriteNode(imageNamed: "greenLight.png")
+    let bombsRemainLabel = SKLabelNode(text: "Test")
     
+    var bombsRemain = 10
     var currentTime = startTime
     var animationIndex = 0
     
     override func didMoveToView(view: SKView) {
+        
         
         createQuitButton()
         createBackground()
@@ -145,7 +146,14 @@ class GameScene: SKScene {
         timer.zPosition = 3
         addChild(timer)
         
-        
+        bombsRemainLabel.zPosition = 3
+        bombsRemainLabel.position = CGPoint(x: self.size.width * 0.1, y: self.size.height * 0.9)
+        bombsRemainLabel.fontName = fontName
+        bombsRemainLabel.fontSize = 24.0 * scale
+        bombsRemainLabel.fontColor = .redColor()
+        bombsRemain = 10 //reset to 10 bombs every time player launches a round
+        bombsRemainLabel.text = "Bombs Remaining: \(bombsRemain)"
+        addChild(bombsRemainLabel)
     }
     
     func setTimer(startTime: Int) -> String{
@@ -167,9 +175,14 @@ class GameScene: SKScene {
         return time
     }
     
+    func updateTimer() {
+        
+        
+    }
+    
     func updateLED(time: Int) {
         
-        let position = CGPoint(x: self.size.width * 0.22, y: self.size.height * 0.7)
+        let position = CGPoint(x: self.size.width * 0.3, y: self.size.height * 0.9)
         
         let base = SKSpriteNode(imageNamed: "lightBase.png")
         base.size = CGSize(width: 30.0, height: 30.0)
@@ -187,23 +200,7 @@ class GameScene: SKScene {
         let fadeOut = SKAction.fadeAlphaTo(1.0, duration: 0.5)
 
         greenLight.runAction(SKAction.repeatActionForever(SKAction.sequence([fadeIn,fadeOut])))
-//        light.runAction(SKAction.repeatActionForever(SKAction.sequence([
-//            SKAction.runBlock({
-//            
-//                light.alpha = 2.0
-//                if self.currentTime > 60 {
-//                    light.lightColor = .greenColor()
-//                }
-//                else if self.currentTime > 30 {
-//                    light.lightColor = .yellowColor()
-//                }
-//                else {
-//                    light.lightColor = .redColor()
-//                }
-//            }),
-//            SKAction.waitForDuration(1.0), fade
-//            
-//            ])))
+
     }
 
     func createQuitButton() {
@@ -211,7 +208,7 @@ class GameScene: SKScene {
         quitButton.fontName = fontName
         quitButton.fontSize = 18.0 * scale
         quitButton.fontColor = .redColor()
-        quitButton.position = CGPoint(x: self.size.width * 0.9, y: self.size.height * 0.85)
+        quitButton.position = CGPoint(x: self.size.width * 0.9, y: self.size.height * 0.9)
         quitButton.zPosition = 2
         addChild(quitButton)
         
